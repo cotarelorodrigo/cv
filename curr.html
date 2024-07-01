@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        max-width: 680px;
+        margin: auto;
+        border: 8px solid #2c581c;
+        padding: 0px 40px;
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 12px;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        position: relative;
+
+        h1 {
+          font-size: 3em;
+          letter-spacing: 0.1em;
+        }
+
+        .profile {
+          width: 150px;
+          height: 150px;
+          border-radius: 999px;
+          border: 6px solid #2c581c;
+          position: absolute;
+          right: 40px;
+          top: 10px;
+        }
+      }
+
+      main {
+        display: flex;
+        flex-direction: row;
+
+        #left {
+          width: 33%;
+        }
+
+        #right {
+          width: 66%;
+        }
+      }
+
+      .data {
+        padding: 0px;
+      }
+
+      hr {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: 3em;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #40911f;
+        opacity: 0.5;
+      }
+
+      hr.top {
+        margin-right: 7em;
+      }
+
+      hr.vertical {
+        rotate: 180deg;
+        margin-left: 1em;
+        margin-right: 2em;
+      }
+
+      h2 {
+        font-style: italic;
+      }
+
+      p {
+        line-height: 1.8;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      .box-info {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .miniature {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        RODRIGO<br />
+        COTARELO
+        <hr class="top" />
+      </h1>
+      <div>
+        <a href="https://github.com/cotarelorodrigo">
+          <img class="miniature" src="./gb.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/rodrigo-cotarelo-6a145610b/">
+          <img class="miniature" src="./linklogo.png" />
+        </a>
+      </div>
+
+      <img class="profile" src="./profile_image.jpg" />
+    </header>
+    <main>
+      <section id="left">
+        <div class="data">
+          <h2>Personal Details</h2>
+          <p>
+            Buenos Aires, Argentina <br />
+            cotarelorodrigo@gmail.com
+          </p>
+        </div>
+        <hr />
+        <div class="data">
+          <h2>Skills</h2>
+          <ul>
+            <li>Software Design</li>
+            <li>Python</li>
+            <li>React / React Native</li>
+            <li>Next.js</li>
+            <li>GCP</li>
+            <li>Docker</li>
+            <li>Fast Api</li>
+            <li>Langchain</li>
+            <li>SQL / No-Sql</li>
+            <li>Firebase</li>
+            <li>Expo</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="data">
+          <h2>Education</h2>
+          <p>University of Buenos Aires, Software Engineer <br />01/2014</p>
+          <p>University of Cambridge, FCI (First certificate in English)</p>
+        </div>
+      </section>
+      <hr class="vertical" />
+      <section id="right">
+        <div class="data">
+          <h2>Summary</h2>
+          <p>
+            I'm a software engineer with over 6 years of hands-on experience. My
+            expertise spans across various technologies including JavaScript,
+            Python, Docker, cloud services, and numerous frameworks. In my
+            previous roles, I've served as a backend developer, data engineer,
+            and full-stack developer, allowing me to gain a comprehensive
+            understanding of the software development lifecycle. Additionally, I
+            had the opportunity to spearhead a startup, which reached 30k users
+            and secured financing from venture capital firms. This equipped me
+            with invaluable insights into product development and management. I
+            am now seeking new challenges that will not only expand my technical
+            skills but also allow me to contribute to innovative projects.
+          </p>
+        </div>
+        <hr />
+        <div class="data">
+          <h2>Experience</h2>
+
+          <p>
+            <b>CTO & CO-founder</b><br />
+            Bluerabbit
+            <br />
+            <br />
+            <b>Start-Up Chile by Corfo</b><br />
+            BIG 6 (SUP 23)<br />
+            We created a Saas for automating community building for companies
+            using AI
+            <br />
+            <br />
+            <b>500 Latam</b><br />
+            Batch 16 Alumni<br />
+            I created an app for colleges that reached 30k users in a year and
+            top #6 in appstore
+            <br />
+            <br />
+            <b>Data Engineer</b><br />
+            Etermax<br />
+            I designed and managed pipelines for data ingestion and process
+            control using Airflow, Python, Spark, AWS.
+            <br />
+            <br />
+            <b>Software Developer</b><br />
+            7Puentes<br />
+            Development and maintenance of machine learning models for important
+            clients such as Mercado Libre, Rappi and Heineken, improving their
+            operations and optimizing their user experience.
+            <br />
+            <br />
+          </p>
+        </div>
+        <hr />
+        <div class="data">
+          <h2>Languages</h2>
+          <p>
+            Spanish: Native<br />
+            English: Upper intermediate<br />
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
